@@ -36,8 +36,8 @@ importers:
         specifier: ^2.2.4
         version: 2.2.4
       marked:
-        specifier: 0.3.5
-        version: 0.3.5
+        specifier: 0.3.18
+        version: 0.3.18
       method-override:
         specifier: latest
         version: 3.0.0
@@ -937,8 +937,9 @@ packages:
   lru-cache@4.1.5:
     resolution: {integrity: sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==}
 
-  marked@0.3.5:
-    resolution: {integrity: sha512-C2ZEiUZxg7zxh9t8C3q6yW4WucWN+OYkiAV/M5GxvfwYrKxlDcuZ74dHmoRoI+R80Oa/FtHl1w8GT13epnbi+Q==}
+  marked@0.3.18:
+    resolution: {integrity: sha512-49i2QYhfULqaXzNZpxC808PisuCTGT2fgG0zrzdCI9N3rIfAWfW0nggvbXr6zvpynZdOG5+9xNxdzP0kwZnERw==}
+    engines: {node: '>=0.10.0'}
     hasBin: true
 
   math-intrinsics@1.1.0:
@@ -2609,7 +2610,7 @@ snapshots:
       pseudomap: 1.0.2
       yallist: 2.1.2
 
-  marked@0.3.5: {}
+  marked@0.3.18: {}
 
   math-intrinsics@1.1.0: {}
 
