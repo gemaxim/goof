@@ -27,8 +27,8 @@ importers:
         specifier: 4.12.4
         version: 4.12.4
       express-fileupload:
-        specifier: 0.0.5
-        version: 0.0.5
+        specifier: 1.1.10
+        version: 1.1.10
       humanize-ms:
         specifier: 1.0.1
         version: 1.0.1
@@ -265,9 +265,9 @@ packages:
   builtin-status-codes@3.0.0:
     resolution: {integrity: sha512-HpGFw18DgFWlncDfjTa2rcQ4W88O1mC8e8yZ2AvQY5KDaktSTwo+KRf6nHK6FRI5FyRyb/5T6+TSxfP7QyGsmQ==}
 
-  busboy@1.6.0:
-    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
-    engines: {node: '>=10.16.0'}
+  busboy@0.3.1:
+    resolution: {integrity: sha512-y7tTxhGKXcyBxRKAni+awqx8uqaJKrSFSNFSeRG5CsWNdmy2BIK+6VGWEW7TZnIO/533mtMEA4rOevQV815YJw==}
+    engines: {node: '>=4.5.0'}
 
   bytes@1.0.0:
     resolution: {integrity: sha512-/x68VkHLeTl3/Ll8IvxdwzhrT+IyKc52e/oyHhA2RwqPqswSnjVbSddfPRwAsJtbilMAPSRWwAlpxdYsSWOTKQ==}
@@ -340,10 +340,6 @@ packages:
 
   config-chain@1.1.13:
     resolution: {integrity: sha512-qj+f8APARXHrM0hraqXYb2/bOVSV4PvJQlNZ/DVj0QrmNM2q2euizkeuVckQ57J+W0mRH6Hvi+k50M4Jul2VRQ==}
-
-  connect-busboy@0.0.2:
-    resolution: {integrity: sha512-/Wi+zhcjivLU6dtsVGXWtRoVs4F7jdE9FUp0tXkbV9gCN7MdRQAgBqQ0xH0Iv9g00Z5EuioJo7ihxOAdZOzZ8w==}
-    engines: {node: '>=0.8.0'}
 
   console-browserify@1.2.0:
     resolution: {integrity: sha512-ZMkYO/LkF17QvCPqM0gxw8yUzigAOZOSWSHg91FH6orS7vcEj5dVZTidN2fQ14yBSdg97RqhSNwLUXInd52OTA==}
@@ -502,6 +498,10 @@ packages:
   detective@4.7.1:
     resolution: {integrity: sha512-H6PmeeUcZloWtdt4DAkFyzFL94arpHr3NOwwmVILFiy+9Qd4JTxxXrzfyGk/lmct2qVGBwTSwSXagqu2BxmWig==}
 
+  dicer@0.3.0:
+    resolution: {integrity: sha512-MdceRRWqltEG2dZqO769g27N/3PXfcKl04VhYnBlo2YhH7zPi88VebsjTKclaOyiuMaGU72hTfw3VkUitGcVCA==}
+    engines: {node: '>=4.5.0'}
+
   diff@1.4.0:
     resolution: {integrity: sha512-VzVc42hMZbYU9Sx/ltb7KYuQ6pqAw+cbFWVy4XKdkuEL2CFaRLGEnISPs7YdzaUGpi+CpIqvRmu7hPQ4T7EQ5w==}
     engines: {node: '>=0.3.1'}
@@ -600,10 +600,9 @@ packages:
   evp_bytestokey@1.0.3:
     resolution: {integrity: sha512-/f2Go4TognH/KvCISP7OUsHn85hT9nUkxxA9BEWxFn+Oj9o8ZNLm/40hdlgSLyuOimsrTKLUMEorQexp/aPQeA==}
 
-  express-fileupload@0.0.5:
-    resolution: {integrity: sha512-Wfgfvy+blNAdMJPcUjpadTkEcyEfAH7K4/EEFUxVnKJqW8d6kU1Kbj14O0KrHJ4P1QBY022pS1mq6p/bU601MQ==}
-    engines: {node: '>=0.8.0'}
-    deprecated: Please upgrade express-fileupload to version 1.1.8+ due to a security vulnerability with the parseNested option
+  express-fileupload@1.1.10:
+    resolution: {integrity: sha512-VEbeJBMDl+N+I/vXjQ17Xg+R35El6l6n/EELcSSpnwQbjqFmtAfXY9p5NpBpto5FqnksIleYImJ1jNlIWlP2aw==}
+    engines: {node: '>=8.0.0'}
 
   express@4.12.4:
     resolution: {integrity: sha512-pbZznlqu9soBZPkF5SoG/zll+IfRZqAXvFzQO/fIIHD36VUpkRafbQsiKtMm3uMQ9v5cGg3+n7gZyaPOdzIVYg==}
@@ -655,9 +654,6 @@ packages:
     resolution: {integrity: sha512-mnBGgIFRNu54GtbkXy6+QKPYW/b5joAURorA8ELeJc/5BBNph6Go1NmHa9dt08ghFnhGuLenrUmNO8Za1CwEUQ==}
     engines: {node: '>= 0.6'}
 
-  fs-extra@0.22.1:
-    resolution: {integrity: sha512-M7CuxS2f9k/5il8ufmLiCtT7B2O2JLoTZi83ZtyEJMG67cTn87fNULYWtno5Vm31TxmSRE0nkA9GxaRR+y3XTA==}
-
   fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
@@ -696,9 +692,6 @@ packages:
     resolution: {integrity: sha512-iiTUZ5vZ+2ZV+h71XAgwCSu6+NAizhFU3Yw8aC/hH5SQ3SnISqEqAek40imAFGtDcwJKNhXvSY+hzIolnLwcdQ==}
     engines: {node: '>=0.4.0'}
     deprecated: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js
-
-  graceful-fs@4.2.11:
-    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
   har-validator@2.0.6:
     resolution: {integrity: sha512-P6tFV+wCcUL3nbyTDAvveDySfbhy0XkDtAIfZP6HITjM2WUsiPna/Eg1Yy93SFXvahqoX+kt0n+6xlXKDXYowA==}
@@ -893,9 +886,6 @@ packages:
 
   json-stringify-safe@5.0.1:
     resolution: {integrity: sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==}
-
-  jsonfile@2.4.0:
-    resolution: {integrity: sha512-PKllAqbgLgxHaj8TElYymKCAgrASebJrWpTnEkOaTowt23VKXXN0sUeriJ+eh7y6ufb/CC5ap11pz71/cM0hUw==}
 
   jsonify@0.0.1:
     resolution: {integrity: sha512-2/Ki0GcmuqSrgFyelQq9M05y7PS0mEwuIzrf3f1fPqkVDVRvZrPZtVSMHxdgo8Aq0sxAOb/cr2aqqA3LeWHVPg==}
@@ -1319,11 +1309,6 @@ packages:
   resumer@0.0.0:
     resolution: {integrity: sha512-Fn9X8rX8yYF4m81rZCK/5VmrmsSbqS/i3rDLl6ZZHAXgC2nTAx3dhwG8q8odP/RmdLa2YrybDJaAMg+X1ajY3w==}
 
-  rimraf@2.7.1:
-    resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
-    deprecated: Rimraf versions prior to v4 are no longer supported
-    hasBin: true
-
   ripemd160@2.0.1:
     resolution: {integrity: sha512-J7f4wutN8mdbV08MJnXibYpCOPHR+yzy+iQ/AsjMv2j8cLavQ8VGagDFUwwTAdF8FmRKVeNpbTTEwNHCW1g94w==}
 
@@ -1450,13 +1435,9 @@ packages:
   stream-splicer@2.0.1:
     resolution: {integrity: sha512-Xizh4/NPuYSyAXyT7g8IvdJ9HJpxIGL9PjyhtywCZvvP0OPIdqyrr4dMikeuvY8xahpdKEBlBTySe583totajg==}
 
-  streamifier@0.1.1:
-    resolution: {integrity: sha512-zDgl+muIlWzXNsXeyUfOk9dChMjlpkq0DRsxujtYPgyJ676yQ8jEm6zzaaWHFDg5BNcLuif0eD2MTyJdZqXpdg==}
-    engines: {node: '>=0.10'}
-
-  streamsearch@1.1.0:
-    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
-    engines: {node: '>=10.0.0'}
+  streamsearch@0.1.2:
+    resolution: {integrity: sha512-jos8u++JKm0ARcSUTAZXOVC0mSox7Bhn6sBgty73P1f3JGf7yG2clTbBNHUdde/kdvP2FESam+vM6l8jBrNxHA==}
+    engines: {node: '>=0.8.0'}
 
   string_decoder@0.10.31:
     resolution: {integrity: sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==}
@@ -1894,9 +1875,9 @@ snapshots:
 
   builtin-status-codes@3.0.0: {}
 
-  busboy@1.6.0:
+  busboy@0.3.1:
     dependencies:
-      streamsearch: 1.1.0
+      dicer: 0.3.0
 
   bytes@1.0.0: {}
 
@@ -1982,10 +1963,6 @@ snapshots:
     dependencies:
       ini: 1.3.8
       proto-list: 1.2.4
-
-  connect-busboy@0.0.2:
-    dependencies:
-      busboy: 1.6.0
 
   console-browserify@1.2.0: {}
 
@@ -2151,6 +2128,10 @@ snapshots:
       acorn: 5.7.4
       defined: 1.0.1
 
+  dicer@0.3.0:
+    dependencies:
+      streamsearch: 0.1.2
+
   diff@1.4.0: {}
 
   diffie-hellman@5.0.3:
@@ -2238,11 +2219,9 @@ snapshots:
       md5.js: 1.3.5
       safe-buffer: 5.2.1
 
-  express-fileupload@0.0.5:
+  express-fileupload@1.1.10:
     dependencies:
-      connect-busboy: 0.0.2
-      fs-extra: 0.22.1
-      streamifier: 0.1.1
+      busboy: 0.3.1
 
   express@4.12.4:
     dependencies:
@@ -2319,12 +2298,6 @@ snapshots:
 
   fresh@0.2.4: {}
 
-  fs-extra@0.22.1:
-    dependencies:
-      graceful-fs: 4.2.11
-      jsonfile: 2.4.0
-      rimraf: 2.7.1
-
   fs.realpath@1.0.0: {}
 
   function-bind@1.1.2: {}
@@ -2374,8 +2347,6 @@ snapshots:
 
   graceful-fs@1.2.3:
     optional: true
-
-  graceful-fs@4.2.11: {}
 
   har-validator@2.0.6:
     dependencies:
@@ -2566,10 +2537,6 @@ snapshots:
       jsonify: 0.0.1
 
   json-stringify-safe@5.0.1: {}
-
-  jsonfile@2.4.0:
-    optionalDependencies:
-      graceful-fs: 4.2.11
 
   jsonify@0.0.1: {}
 
@@ -3030,10 +2997,6 @@ snapshots:
     dependencies:
       through: 2.3.8
 
-  rimraf@2.7.1:
-    dependencies:
-      glob: 7.2.3
-
   ripemd160@2.0.1:
     dependencies:
       hash-base: 2.0.2
@@ -3206,9 +3169,7 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 2.3.8
 
-  streamifier@0.1.1: {}
-
-  streamsearch@1.1.0: {}
+  streamsearch@0.1.2: {}
 
   string_decoder@0.10.31: {}
 
